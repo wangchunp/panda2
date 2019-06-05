@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0,
+    maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/category2.css">
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="js/template-web.js"></script>
+    <script src="js/category2.js"></script>
+    <title>乐淘</title>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav my-header">
+        <h1 class="mui-title">乐淘云购</h1>
+        <a class="mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <nav class="mui-bar mui-bar-tab my-footer">
+        <a class="mui-tab-item mui-active" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="cart.html">
+            <span class="mui-icon iconfont icon-daohanggouwuche"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="user.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    <div>
+        <!-- 左边 -->
+        <div class="my-content">
+            <div class="category-left">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <div class="links" id="links">
+                            <a href="javascript:;">运动馆</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /左边 -->
+            <!-- 右边 -->
+            <div class="category-right">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <ul class="brand-list mui-clearfix">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /右边 -->
+        </div>
+</body>
+<script type="text/template" id="category-first">
+    {{each rows val}}
+    <a href="javascript:;" data-id="{{val.id}}">{{v.categoryName}}</a> {{/each}}
+</script>
+
+
+<!-- 模板内不能写注释 -->
+<!-- 二级数据生成 -->
+<script type="text/template" id="category-second">
+    {{each rows val}}
+    <li>
+        <a href="javascript:;">
+            <img src="{{val.brandLogo}}" alt="">
+            <p>{{val.brandName}}</p>
+        </a>
+    </li>
+    {{/each}} {{if !rows.leight}}
+    <div class="noresult">暂无数据</div>
+    {{/if}}
+</script>
+
+</html>

@@ -1,0 +1,131 @@
+/* 公共样式 */
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.my-header {
+    background: #006699;
+}
+
+.my-header h1 {
+    color: #FFF;
+}
+
+.my-header .mui-icon-search {
+    color: #FFF;
+}
+
+.my-footer {
+    background: #006699;
+}
+
+.my-footer .mui-tab-item {
+    color: #FFF;
+}
+
+body,
+.mui-content {
+    background: #FFF;
+}
+
+.nav-links {
+    padding: 10px;
+}
+
+.nav-links a {
+    float: left;
+    width: 33.333%;
+}
+
+.nav-links a img {
+    display: block;
+    width: 100%;
+}
+
+.brand {
+    padding: 0 10px;
+}
+
+.title {
+    width: 100%;
+}
+
+.brand ul li {
+    float: left;
+    width: 25%;
+}
+
+.brand li a {
+    display: block;
+}
+
+.brand li a img {
+    width: 100%;
+}
+
+.product {
+    padding: 0 10px;
+}
+
+.product ul {
+    overflow: hidden;
+    padding: 6px 0;
+}
+
+.product ul li {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.product li a {
+    display: block;
+    box-shadow: 0 0 5px #ccc;
+    padding: 5px;
+}
+
+.product li a img {
+    width: 100%;
+}
+
+.product li a .name {
+    display: block;
+    text-align: center;
+    color: #8f8f94;
+    font-size: 14px;
+    line-height: 18px;
+    height: 38px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.product li a p {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.product li a p span:first-child {
+    color: #f20;
+    padding-right: 5px;
+}
+
+.product li a p span:last-child {
+    text-decoration: line-through;
+    padding-left: 5px;
+}
+
+.product li a .buy-now {
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background: #006699;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+    margin: 0 auto 5px auto;
+}
